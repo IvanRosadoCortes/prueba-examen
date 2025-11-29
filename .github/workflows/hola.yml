@@ -7,10 +7,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-	
     steps:
-	  
       - uses: actions/checkout@v5
-      
       - name: Decir hola
         run: echo "hola"
