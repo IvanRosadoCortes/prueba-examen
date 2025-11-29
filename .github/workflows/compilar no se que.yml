@@ -10,8 +10,8 @@ jobs:
       - uses: actions/checkout@v5
       - name: Compilar java
         run: |
-        mkdir -p out
-        javac -d out src/*.java
+          mkdir -p out
+          javac -d out src/*.java
       - name: Crear JAR
         run: cd out && jar cfe ../calculadora.jar Main */class
       - name: Subir un archivo
